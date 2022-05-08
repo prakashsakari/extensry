@@ -1,0 +1,31 @@
+.home-container {
+    color: var(--text-color-primary);
+    padding: 2rem 0;
+}
+
+.logo-props {
+    width: 90px;
+}
+
+.user-name-continer {
+    margin-top: 6rem;
+}
+
+.main-heading {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 4px solid var(--text-color-primary);
+    font-size: 3.5rem;
+    color: var(--text-color-primary);
+    text-align: center;
+    font-weight: 500;
+}
+
+.input:focus{
+    outline: none;
+}

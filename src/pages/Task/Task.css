@@ -1,0 +1,105 @@
+.task-container {
+    color: var(--text-color-primary);
+    padding-top: 15rem;
+    gap: 2.5rem;
+    height: 100vh;
+  }
+  
+  .time {
+    font-size: 10rem;
+    line-height: 1rem;
+  }
+  
+  .message {
+    font-size: 4rem;
+    margin-top: 4rem;
+  }
+  
+  .focus-question {
+    font-size: 2rem;
+  }
+  
+  .task-input .input {
+    font-size: 2.5rem;
+  }
+  
+  input[type="checkbox"] {
+    opacity: 0;
+  }
+  
+  .user-task-container label::before {
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 4px;
+    border: 1px solid white;
+  }
+  
+  .user-task-container label::after {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 1rem;
+    border-left: 6px solid;
+    border-bottom: 6px solid;
+    transform: rotate(-45deg);
+  }
+  
+  .user-task-container label {
+    position: relative;
+  }
+  
+  .user-task-container label::before,
+  .user-task-container label::after {
+    position: absolute;
+  }
+  
+  .user-task-container label::before {
+    top: 8px;
+    left: -2rem;
+  }
+  
+  .user-task-container label::after {
+    top: 7px;
+    left: -2rem;
+  }
+  
+  input[type="checkbox"] + label::after {
+    content: none;
+  }
+  
+  input[type="checkbox"]:checked + label::after {
+    content: "";
+  }
+  
+  .user-task-container label:hover {
+    cursor: pointer;
+  }
+  
+  .strike-through {
+    text-decoration: line-through;
+  }
+  
+  .quote-container {
+    padding-bottom: 2rem;
+    position: absolute;
+    bottom: 0;
+    width: 70vw;
+    text-align: center;
+  }
+  
+  .cta {
+    margin-left: 1rem;
+  }
+  
+  .feat-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color-primary);
+  }
+  
+  .feat-btn:hover {
+    cursor: pointer;
+  }
+  

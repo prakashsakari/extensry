@@ -1,0 +1,21 @@
+.footer {
+    padding: 2rem 0 1rem 0;
+    color: var(--text-color-secondary);
+    position: fixed;
+    bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+  
+.padding-all-16 {
+    padding: 0;
+    padding-top: 8px;
+}
+
+.logo-img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+  

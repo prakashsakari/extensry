@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+
+:root {
+    --text-color-primary: #F8FAFC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    letter-spacing: .8px;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.grow-shrink-basis {
+    flex: 1 1 auto;
+}
+
+.gap {
+    gap: 1.25rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top-0{
+    top: 0
+}
+
+.left-0{
+    left: 0
+}
+
+.right-0{
+    right: 0
+}
+
+.border-radius-4 {
+    border-radius: 4px;
+}
+
+.border-radius-8 {
+    border-radius: 8px;
+}
+
+.padding-all-16 {
+    padding: 1rem;
+}
+
+.padding-all-8{
+    padding: 8px;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+h5 {
+    font-size: 8px;
+    line-height: 1rem;
+}

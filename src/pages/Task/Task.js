@@ -1,6 +1,7 @@
 import { useEffect, useState, Fragment } from "react";
 import { useBrowser } from "../../context/browser-context";
 import { quotes } from "../../db";
+import { Weather } from "../../components";
 import "./Task.css";
 
 export const Task = () => {
@@ -102,6 +103,7 @@ export const Task = () => {
 
   return (
     <div className="task-container d-flex direction-column align-center">
+      <Weather />
       <span className=" time">{time}</span>
       <span className="heading-2 message">
         {message}, {name}

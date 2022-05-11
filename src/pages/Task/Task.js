@@ -1,11 +1,12 @@
 import { useEffect, useState, Fragment } from "react";
 import { useBrowser } from "../../context/browser-context";
 import { quotes } from "../../db";
-import { Weather } from "../../components";
+import { Weather, Todo } from "../../components";
 import "./Task.css";
 
 export const Task = () => {
   const [isChecked, setIsChecked] = useState(false);
+  const [isTodoOpen, setIsTodoOpen] = useState(false);
   const {
     time,
     name,
@@ -97,9 +98,22 @@ export const Task = () => {
     browserDispatch({
       type: "CLEAR"
     });
+    setIsChecked(false);
     localStorage.removeItem("task");
     localStorage.removeItem("checked");
   };
+
+  const handleTodoClick = () => {
+    setIsTodoOpen(isTodoOpen => !isTodoOpen)
+    localStorage.setItem("todoStatus", !isTodoOpen);
+  }
+
+  useEffect(() => {
+    const todoStatus = localStorage.getItem("todoStatus");
+    if (todoStatus === "true") setIsTodoOpen(true)
+    else if (todoStatus === "false") setIsTodoOpen(false)
+  }, [])
+
 
   return (
     <div className="task-container d-flex direction-column align-center">
@@ -139,7 +153,7 @@ export const Task = () => {
             />
             <label
               for="input-check"
-              className={isChecked ? "heading-3 strike-through" : "heading-3"}
+              className={isChecked ? "heading-3 label strike-through" : "heading-3 label"}
             >
               {task}
             </label>
@@ -155,9 +169,15 @@ export const Task = () => {
           </div>
         </div>
       )}
-      <div className="quote-container">
-        <span className="heading-3">{textQuote}</span>
+      <div className="quote-container absolute bottom-0 d-flex align-center justify-center">
+        <span className="heading-3 quote">{textQuote}</span>
       </div>
+      {isTodoOpen && <Todo />}
+      <div className="todo-box absolute">
+        <button className="button todo-btn cursor" onClick={handleTodoClick}>ToDo</button>
+      </div>
+      
+      
     </div>
   );
 };

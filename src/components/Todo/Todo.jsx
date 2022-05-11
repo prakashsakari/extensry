@@ -40,7 +40,6 @@ export const Todo = () => {
 
     useEffect(() => {
         const todos = JSON.parse(localStorage.getItem("todolist"));
-        console.log("Todos -", todos)
         todos && setTodoList(todos);
     }, [])
 

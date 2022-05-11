@@ -2,6 +2,7 @@
 
 :root {
   --text-color-primary: #f8fafc;
+  --todo-background: #0f172a;
 }
 
 * {

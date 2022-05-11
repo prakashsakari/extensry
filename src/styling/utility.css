@@ -20,6 +20,10 @@ body {
   background-color: transparent;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .d-flex {
   display: flex;
 }
@@ -68,6 +72,10 @@ body {
   gap: 1.25rem;
 }
 
+.gap-small {
+  gap: 8px
+}
+
 .relative {
   position: relative;
 }
@@ -90,6 +98,10 @@ body {
 
 .right-0 {
   right: 0;
+}
+
+.bottom-0{
+  bottom: 0;
 }
 
 .border-radius-4 {

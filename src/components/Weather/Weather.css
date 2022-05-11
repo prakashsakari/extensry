@@ -1,0 +1,19 @@
+.weather-container {
+    position: absolute;
+    top: 1rem;
+    right: 2.5rem;
+}
+  
+.temp {
+    font-size: 2rem;
+}
+  
+.degree {
+    position: absolute;
+    top: 0rem;
+}
+  
+.sky-status {
+    align-self: flex-end;
+}
+  

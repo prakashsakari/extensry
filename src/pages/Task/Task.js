@@ -30,6 +30,12 @@ export const Task = () => {
       type: "TASK",
       payload: currentTask
     });
+    if (new Date().getDate() !== Number(localStorage.getItem("date"))) {
+      console.log(new Date().getDate(), localStorage.getItem("date"));
+      localStorage.removeItem("task");
+      localStorage.removeItem("date");
+      localStorage.removeItem("checked");
+    }
   }, []);
 
   useEffect(() => {
@@ -70,6 +76,7 @@ export const Task = () => {
         payload: event.target.value
       });
       localStorage.setItem("task", event.target.value);
+      localStorage.setItem("date", new Date().getDate());
     }
   };
 

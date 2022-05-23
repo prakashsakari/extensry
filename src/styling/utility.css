@@ -3,6 +3,7 @@
 :root {
   --text-color-primary: #f8fafc;
   --todo-background: #0f172a;
+  --scrollbar-color: #a1a1aa;
 }
 
 * {

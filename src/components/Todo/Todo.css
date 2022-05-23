@@ -1,5 +1,7 @@
 .todo-container {
     width: 20vw;
+    max-height: 50vh;
+    overflow-y: auto;
     background-color: var(--todo-background);
     opacity: .9;
     right: 2rem;
@@ -48,3 +50,15 @@
     font-size: 1rem;
 }
 
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--text-color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color);
+}
